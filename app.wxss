@@ -1,0 +1,166 @@
+@import '/styles/main.wxss';
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+
+.cu-bar.tabbar {
+	padding: 0;
+	height: calc(100rpx + env(safe-area-inset-bottom) / 2);
+	padding-bottom: calc(env(safe-area-inset-bottom) / 2);
+}
+
+.cu-tabbar-height {
+	min-height: 100rpx;
+	height: calc(100rpx + env(safe-area-inset-bottom) / 2);
+}
+
+.cu-bar.tabbar.shadow {
+	box-shadow: 0 -1rpx 6rpx rgba(0, 0, 0, 0.1);
+}
+
+.cu-bar.tabbar .action {
+	font-size: 22rpx;
+	position: relative;
+	flex: 1;
+	text-align: center;
+	padding: 0;
+	display: block;
+	height: auto;
+	line-height: 1;
+	margin: 0;
+	overflow: initial;
+}
+
+.cu-bar.tabbar.shop .action {
+	width: 140rpx;
+	flex: initial;
+}
+
+.cu-bar.tabbar .action.add-action {
+	position: relative;
+	z-index: 2;
+	background-color: inherit;
+  border-top:1rpx solif rgba(0,0,0,0.04);
+}
+
+.cu-bar.tabbar .action.add-action [class*="cuIcon-"] {
+	position: absolute;
+	width: 70rpx;
+	z-index: 2;
+	height: 70rpx;
+	border-radius: 50%;
+	line-height: 70rpx;
+	font-size: 50rpx;
+	top: -35rpx;
+	left: 0;
+	right: 0;
+	margin: auto;
+	padding: 0;
+}
+
+.cu-bar.tabbar .action.add-action::after {
+	content: "";
+	position: absolute;
+	width: 130rpx;
+	height: 130rpx;
+	top: -40rpx;
+	left: 0;
+	right: 0;
+	margin: auto;
+	box-shadow: 0 -1px 3px 0 rgba(0,0,0,0.04);
+  /* border: 1rpx solid #f4f4f4; */
+	border-radius: 100rpx;
+	background-color: inherit;
+	z-index: 0;
+}
+
+.cu-bar.tabbar .action.add-action::before {
+	content: "";
+	position: absolute;
+	width: 120rpx;
+	height: 50rpx;
+	bottom: 30rpx;
+	left: 0;
+	right: 0;
+	margin: auto;
+	background-color: inherit;
+	z-index: 1;
+}
+
+.cu-bar.tabbar .btn-group {
+	flex: 1;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 0 10rpx;
+}
+
+.cu-bar.tabbar button.action::after {
+	border: 0;
+}
+
+.cu-bar.tabbar .action [class*="cuIcon-"] {
+	width: 100rpx;
+	position: relative;
+	display: block;
+	height: auto;
+	margin: 0 auto 10rpx;
+	text-align: center;
+	font-size: 40rpx;
+}
+
+.cu-bar.tabbar .action .cuIcon-cu-image {
+	margin: 0 auto;
+}
+
+.cu-bar.tabbar .action .cuIcon-cu-image image {
+	width: 60rpx;
+	height: 60rpx;
+	display: inline-block;
+}
+
+.cu-bar.tabbar .submit {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	position: relative;
+	flex: 2;
+	align-self: stretch;
+}
+
+.cu-bar.tabbar .submit:last-child {
+	flex: 2.6;
+}
+
+.cu-bar.tabbar .submit+.submit {
+	flex: 2;
+}
+
+.cu-bar.tabbar.border .action::before {
+	content: " ";
+	width: 200%;
+	height: 200%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform: scale(0.5);
+	transform-origin: 0 0;
+	border-right: 1rpx solid rgba(0, 0, 0, 0.1);
+	z-index: 3;
+}
+
+.cu-bar.tabbar.border .action:last-child:before {
+	display: none;
+}
+
+.cu-bar .tabbar-border .cu-text {
+  font-size: 20rpx;
+  color: #8F8E93;
+}

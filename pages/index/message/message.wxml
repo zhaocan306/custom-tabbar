@@ -1,0 +1,2 @@
+<!-- 自定义顶部栏 -->
+<navbar bgColor="bg-nav"><view class="nav-range" slot="content">我的</view></navbar>

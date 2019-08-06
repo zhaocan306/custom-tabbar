@@ -1,0 +1,21 @@
+{
+  "pages": [
+    "pages/index/index/index",
+    "pages/index/home/home",
+    "pages/index/message/message",
+    "pages/index/order/order",
+    "pages/index/service/service",
+    "pages/index/shop/shop"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "自定义顶部栏",
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "custom"
+  },
+  "usingComponents": {
+    "navbar": "/components/navbar/navbar"
+  },
+  "sitemapLocation": "sitemap.json"
+}

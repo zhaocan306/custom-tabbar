@@ -1,0 +1,1 @@
+<navbar bgColor="bg-nav"><view class="nav-range" slot="content">服务</view></navbar>
